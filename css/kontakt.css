@@ -1,0 +1,151 @@
+.contact-container {
+  background-color: white;
+  border-radius: 10px;
+}
+.contact-info {
+  width: 33%;
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contact-info:hover .icon {
+  animation: contactIcon;
+  animation-duration: 2s;
+}
+@keyframes contactIcon {
+  from {
+    margin-right: 0;
+  }
+  to {
+    margin-right: -130px;
+  }
+}
+.contact-row {
+  flex-direction: column;
+}
+form {
+  margin: 50px;
+  max-width: 100%;
+}
+#fname {
+  margin-right: 10px;
+}
+#lname {
+  margin-left: 10px;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #c7a17a;
+  color: white;
+  padding: 20px 70px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: auto;
+  transition: all 0.3s;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+input[type="submit"]:hover {
+  background-color: #13131a;
+}
+
+@media screen and (max-width: 1000px) {
+  .row {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .about {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .menu {
+    width: 100%;
+  }
+  .contact-info {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  #fname {
+    margin-right: 0;
+  }
+  #lname {
+    margin-left: 0;
+  }
+  .footer-row .footer-menu {
+    width: 100%;
+  }
+  .footer-row .logo {
+    width: 100%;
+    justify-content: center;
+  }
+  .menu-text h3 {
+    font-size: 20px;
+  }
+  .hero-text-contact h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav {
+    display: block;
+  }
+  .topnav a {
+    display: none;
+  }
+  .topnav a:hover {
+    transform: none;
+  }
+  #logo {
+    display: none;
+  }
+  .hero-btn {
+    margin-right: 10px;
+    padding: 10px 20px;
+  }
+  .hero-btn:last-of-type {
+    margin-right: 10px;
+    padding: 10px 20px;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive a:nth-child(5) {
+    display: block;
+  }
+  .hero-text {
+    padding: 30px;
+  }
+}
